@@ -1,4 +1,4 @@
-import App from './App'
+import Wiki from './Wiki'
 import Home from './Home'
 import CliToApi from './CliToApi'
 
@@ -10,7 +10,7 @@ export const routes = [
   },
   {
     path: '/wiki',
-    element: <App />,
+    element: <Wiki />,
     title: 'Wiki Search Term Generator'
   },
   {

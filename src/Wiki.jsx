@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import './App.css'
+import './Wiki.css'
 import { usePageTitle } from './hooks/usePageTitle'
-function App() {
+function Wiki() {
 
   usePageTitle('Wiki Search Term Generator')
   const [inputs, setInputs] = useState([
@@ -42,7 +42,7 @@ function App() {
       .map(value => formatValue(value))
     
     if (filledInputs.length === 0) return ''
-    return `(${filledInputs.join(' and ')})`
+    return `(${filledInputs.join(' AND ')})`
   }
 
   const handleCopy = async () => {
@@ -106,4 +106,4 @@ function App() {
   )
 }
 
-export default App
+export default Wiki
