@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Wiki.css'
 import { usePageTitle } from './hooks/usePageTitle'
+import { Link } from 'react-router-dom'
 function Wiki() {
 
   usePageTitle('Wiki Search Term Generator')
@@ -61,6 +62,7 @@ function Wiki() {
 
   return (
     <div className="container">
+      <Link to="/" className="home-link">← Back to Home</Link>
       <h1 className="title">Wiki Search Term Generator</h1>
       <div className="input-container">
         {inputs.map((input) => (

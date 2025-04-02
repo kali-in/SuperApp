@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './CliToApi.css'
 import { usePageTitle } from './hooks/usePageTitle'
+import { Link } from 'react-router-dom'
 
 function CliToApi() {
   usePageTitle('CLI to API Converter')
@@ -37,6 +38,7 @@ function CliToApi() {
 
   return (
     <div className="container">
+            <Link to="/" className="home-link">← Back to Home</Link>
       <h1 className="title">CLI to API Name Converter</h1>
       
       <div className="converter-container">
